@@ -6,7 +6,7 @@ s.version          = "0.0.1"
 s.summary          = "WDFlashCard is a simple lightweight component for displaying flashcards inside iOS apps."
 
 s.description      = <<-DESC
-This library enables you to setup expandable table view in several simple steps.
+WDFlashCard is a simple lightweight component for displaying flashcards inside iOS apps.
 DESC
 
 s.homepage         = "https://github.com/VladimirDinic/WDFlashCard"
