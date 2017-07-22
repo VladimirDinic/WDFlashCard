@@ -58,5 +58,4 @@ class ViewController: UIViewController, WDFlashCardDelegate {
 For better understanding look at the source code example.
 
 # Note:
-Documentation is still in preparation and the code will be updated regularly
-<br>If you find any bug, please report it, and I will try to fix it ASAP.
+If you find any bug, please report it, and I will try to fix it ASAP.
