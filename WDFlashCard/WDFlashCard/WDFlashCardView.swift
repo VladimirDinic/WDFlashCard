@@ -37,13 +37,6 @@ public enum FlipAnimations
     func flipBackView() -> UIView
 }
 
-@objc public protocol WDCurlAnimationDelegate
-{
-    func numberOfItems() -> Int
-    func view(at index:Int) -> UIView
-    func repeatInfinitely() -> Bool
-}
-
 open class WDFlashCard: UIView {
     
     open var flipAnimation:FlipAnimations = .flipFromLeft {

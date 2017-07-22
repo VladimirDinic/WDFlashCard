@@ -16,7 +16,6 @@ class ViewController: UIViewController, WDFlashCardDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        flashCard.flashCardDelegate = self
         flashCard.duration = 2.0
         flashCard.flipAnimation = .flipFromLeft
     }
