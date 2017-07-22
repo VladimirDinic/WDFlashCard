@@ -8,17 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController, WDFlipAnimationDelegate {
+class ViewController: UIViewController, WDFlashCardDelegate {
     
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var frontView: UIView!
-    @IBOutlet weak var animationView: WDAnimationView!
+    @IBOutlet weak var flashCard: WDFlashCard!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        animationView.flipAnimationDelegate = self
-        animationView.duration = 2.0
-        animationView.flipAnimation = .flipFromLeft
+        flashCard.flashCardDelegate = self
+        flashCard.duration = 2.0
+        flashCard.flipAnimation = .flipFromLeft
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,7 +26,7 @@ class ViewController: UIViewController, WDFlipAnimationDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    //MARK: FlipViewDelegate methods
+    //MARK: WDFlashCardDelegate methods
     
     func flipBackView() -> UIView {
         return backView

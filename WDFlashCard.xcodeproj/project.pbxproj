@@ -12,7 +12,7 @@
 		F50B4BA21F23EB7F00EECBC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50B4BA01F23EB7F00EECBC2 /* Main.storyboard */; };
 		F50B4BA41F23EB7F00EECBC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50B4BA31F23EB7F00EECBC2 /* Assets.xcassets */; };
 		F50B4BA71F23EB7F00EECBC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50B4BA51F23EB7F00EECBC2 /* LaunchScreen.storyboard */; };
-		F50B4BAF1F23EB8D00EECBC2 /* WDAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B4BAE1F23EB8D00EECBC2 /* WDAnimationView.swift */; };
+		F54D6D561F23EE52006A5E84 /* WDFlashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54D6D551F23EE52006A5E84 /* WDFlashCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		F50B4BA31F23EB7F00EECBC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F50B4BA61F23EB7F00EECBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F50B4BA81F23EB7F00EECBC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F50B4BAE1F23EB8D00EECBC2 /* WDAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDAnimationView.swift; sourceTree = "<group>"; };
+		F54D6D551F23EE52006A5E84 /* WDFlashCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDFlashCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,15 @@
 				F50B4BA31F23EB7F00EECBC2 /* Assets.xcassets */,
 				F50B4BA51F23EB7F00EECBC2 /* LaunchScreen.storyboard */,
 				F50B4BA81F23EB7F00EECBC2 /* Info.plist */,
-				F50B4BAE1F23EB8D00EECBC2 /* WDAnimationView.swift */,
+				F54D6D541F23EE52006A5E84 /* WDFlashCard */,
+			);
+			path = WDFlashCard;
+			sourceTree = "<group>";
+		};
+		F54D6D541F23EE52006A5E84 /* WDFlashCard */ = {
+			isa = PBXGroup;
+			children = (
+				F54D6D551F23EE52006A5E84 /* WDFlashCardView.swift */,
 			);
 			path = WDFlashCard;
 			sourceTree = "<group>";
@@ -142,7 +150,7 @@
 			files = (
 				F50B4B9F1F23EB7F00EECBC2 /* ViewController.swift in Sources */,
 				F50B4B9D1F23EB7F00EECBC2 /* AppDelegate.swift in Sources */,
-				F50B4BAF1F23EB8D00EECBC2 /* WDAnimationView.swift in Sources */,
+				F54D6D561F23EE52006A5E84 /* WDFlashCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +316,7 @@
 				F50B4BAD1F23EB7F00EECBC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Flip Animation Delegate-->
+        <!--Flash Card Delegate-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WDFlashCard" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5W-Pp-H3A" customClass="WDAnimationView" customModule="WDFlashCard" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5W-Pp-H3A" customClass="WDFlashCard" customModule="WDFlashCard" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RyI-6g-bc5">
@@ -88,7 +88,7 @@
                                     <constraint firstItem="RyI-6g-bc5" firstAttribute="centerY" secondItem="k5W-Pp-H3A" secondAttribute="centerY" id="wjs-eo-nKV"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="flipAnimationDelegate" destination="BYZ-38-t0r" id="AKB-Hu-7yC"/>
+                                    <outlet property="flashCardDelegate" destination="BYZ-38-t0r" id="R9z-iv-FI7"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -100,8 +100,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="animationView" destination="k5W-Pp-H3A" id="oX9-5C-ArC"/>
                         <outlet property="backView" destination="RyI-6g-bc5" id="thU-Xh-dey"/>
+                        <outlet property="flashCard" destination="k5W-Pp-H3A" id="fp7-jc-3z4"/>
                         <outlet property="frontView" destination="4o5-ny-gSF" id="DUT-4g-1B3"/>
                     </connections>
                 </viewController>

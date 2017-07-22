@@ -31,7 +31,7 @@ public enum FlipAnimations
     }
 }
 
-@objc public protocol WDFlipAnimationDelegate
+@objc public protocol WDFlashCardDelegate
 {
     func flipFrontView() -> UIView
     func flipBackView() -> UIView
@@ -44,7 +44,7 @@ public enum FlipAnimations
     func repeatInfinitely() -> Bool
 }
 
-open class WDAnimationView: UIView {
+open class WDFlashCard: UIView {
     
     open var flipAnimation:FlipAnimations = .flipFromLeft {
         didSet {
@@ -55,9 +55,9 @@ open class WDAnimationView: UIView {
     open var duration:Double = 1.0
     open var showFront:Bool = true
     #if TARGET_INTERFACE_BUILDER
-        @IBOutlet open weak var flipAnimationDelegate: AnyObject?
+        @IBOutlet open weak var flashCardDelegate: AnyObject?
     #else
-    open var flipAnimationDelegate: WDFlipAnimationDelegate? = nil
+    open var flashCardDelegate: WDFlashCardDelegate? = nil
     #endif
     var frontView:UIView?
     var backView:UIView?
@@ -68,7 +68,7 @@ open class WDAnimationView: UIView {
     
     func setFrontAndBackView()
     {
-        if let delegate = self.flipAnimationDelegate
+        if let delegate = self.flashCardDelegate
         {
             frontView = delegate.flipFrontView()
             backView = delegate.flipBackView()
