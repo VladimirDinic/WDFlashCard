@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F50B4B9D1F23EB7F00EECBC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B4B9C1F23EB7F00EECBC2 /* AppDelegate.swift */; };
+		F50B4B9F1F23EB7F00EECBC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B4B9E1F23EB7F00EECBC2 /* ViewController.swift */; };
+		F50B4BA21F23EB7F00EECBC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50B4BA01F23EB7F00EECBC2 /* Main.storyboard */; };
+		F50B4BA41F23EB7F00EECBC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50B4BA31F23EB7F00EECBC2 /* Assets.xcassets */; };
+		F50B4BA71F23EB7F00EECBC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50B4BA51F23EB7F00EECBC2 /* LaunchScreen.storyboard */; };
+		F50B4BAF1F23EB8D00EECBC2 /* WDAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B4BAE1F23EB8D00EECBC2 /* WDAnimationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F50B4B991F23EB7F00EECBC2 /* WDFlashCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDFlashCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50B4B9C1F23EB7F00EECBC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F50B4B9E1F23EB7F00EECBC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F50B4BA11F23EB7F00EECBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F50B4BA31F23EB7F00EECBC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F50B4BA61F23EB7F00EECBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F50B4BA81F23EB7F00EECBC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50B4BAE1F23EB8D00EECBC2 /* WDAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDAnimationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F50B4B961F23EB7F00EECBC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F50B4B901F23EB7F00EECBC2 = {
+			isa = PBXGroup;
+			children = (
+				F50B4B9B1F23EB7F00EECBC2 /* WDFlashCard */,
+				F50B4B9A1F23EB7F00EECBC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F50B4B9A1F23EB7F00EECBC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F50B4B991F23EB7F00EECBC2 /* WDFlashCard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F50B4B9B1F23EB7F00EECBC2 /* WDFlashCard */ = {
+			isa = PBXGroup;
+			children = (
+				F50B4B9C1F23EB7F00EECBC2 /* AppDelegate.swift */,
+				F50B4B9E1F23EB7F00EECBC2 /* ViewController.swift */,
+				F50B4BA01F23EB7F00EECBC2 /* Main.storyboard */,
+				F50B4BA31F23EB7F00EECBC2 /* Assets.xcassets */,
+				F50B4BA51F23EB7F00EECBC2 /* LaunchScreen.storyboard */,
+				F50B4BA81F23EB7F00EECBC2 /* Info.plist */,
+				F50B4BAE1F23EB8D00EECBC2 /* WDAnimationView.swift */,
+			);
+			path = WDFlashCard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F50B4B981F23EB7F00EECBC2 /* WDFlashCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50B4BAB1F23EB7F00EECBC2 /* Build configuration list for PBXNativeTarget "WDFlashCard" */;
+			buildPhases = (
+				F50B4B951F23EB7F00EECBC2 /* Sources */,
+				F50B4B961F23EB7F00EECBC2 /* Frameworks */,
+				F50B4B971F23EB7F00EECBC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WDFlashCard;
+			productName = WDFlashCard;
+			productReference = F50B4B991F23EB7F00EECBC2 /* WDFlashCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F50B4B911F23EB7F00EECBC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Vladimir Dinic";
+				TargetAttributes = {
+					F50B4B981F23EB7F00EECBC2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3CCXG2UGPS;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F50B4B941F23EB7F00EECBC2 /* Build configuration list for PBXProject "WDFlashCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F50B4B901F23EB7F00EECBC2;
+			productRefGroup = F50B4B9A1F23EB7F00EECBC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F50B4B981F23EB7F00EECBC2 /* WDFlashCard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F50B4B971F23EB7F00EECBC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50B4BA71F23EB7F00EECBC2 /* LaunchScreen.storyboard in Resources */,
+				F50B4BA41F23EB7F00EECBC2 /* Assets.xcassets in Resources */,
+				F50B4BA21F23EB7F00EECBC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F50B4B951F23EB7F00EECBC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50B4B9F1F23EB7F00EECBC2 /* ViewController.swift in Sources */,
+				F50B4B9D1F23EB7F00EECBC2 /* AppDelegate.swift in Sources */,
+				F50B4BAF1F23EB8D00EECBC2 /* WDAnimationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F50B4BA01F23EB7F00EECBC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50B4BA11F23EB7F00EECBC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F50B4BA51F23EB7F00EECBC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50B4BA61F23EB7F00EECBC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F50B4BA91F23EB7F00EECBC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F50B4BAA1F23EB7F00EECBC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F50B4BAC1F23EB7F00EECBC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3CCXG2UGPS;
+				INFOPLIST_FILE = WDFlashCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladimirdinic.WDFlashCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F50B4BAD1F23EB7F00EECBC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3CCXG2UGPS;
+				INFOPLIST_FILE = WDFlashCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladimirdinic.WDFlashCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F50B4B941F23EB7F00EECBC2 /* Build configuration list for PBXProject "WDFlashCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50B4BA91F23EB7F00EECBC2 /* Debug */,
+				F50B4BAA1F23EB7F00EECBC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50B4BAB1F23EB7F00EECBC2 /* Build configuration list for PBXNativeTarget "WDFlashCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50B4BAC1F23EB7F00EECBC2 /* Debug */,
+				F50B4BAD1F23EB7F00EECBC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F50B4B911F23EB7F00EECBC2 /* Project object */;
+}

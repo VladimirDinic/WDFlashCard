@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flip Animation Delegate-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WDFlashCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5W-Pp-H3A" customClass="WDAnimationView" customModule="WDFlashCard" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RyI-6g-bc5">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9J-Gm-9vL">
+                                                <rect key="frame" x="92" y="135" width="116" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.070588235289999995" green="0.13725490200000001" blue="0.23921568630000001" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="h9J-Gm-9vL" firstAttribute="centerY" secondItem="RyI-6g-bc5" secondAttribute="centerY" id="OWl-i8-51d"/>
+                                            <constraint firstItem="h9J-Gm-9vL" firstAttribute="centerX" secondItem="RyI-6g-bc5" secondAttribute="centerX" id="rLR-SR-IAr"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4o5-ny-gSF">
+                                        <rect key="frame" x="-0.5" y="-0.5" width="300" height="300"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wh-86-FjH">
+                                                <rect key="frame" x="91" y="135" width="118" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.070588235289999995" green="0.13725490200000001" blue="0.23921568630000001" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="8wh-86-FjH" firstAttribute="centerY" secondItem="4o5-ny-gSF" secondAttribute="centerY" id="2Gn-3N-wcy"/>
+                                            <constraint firstItem="8wh-86-FjH" firstAttribute="centerX" secondItem="4o5-ny-gSF" secondAttribute="centerX" id="IOc-pX-m9l"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="k5W-Pp-H3A" secondAttribute="height" id="6aJ-9Z-6rW"/>
+                                    <constraint firstItem="RyI-6g-bc5" firstAttribute="height" secondItem="k5W-Pp-H3A" secondAttribute="height" id="DYo-r7-6bH"/>
+                                    <constraint firstItem="RyI-6g-bc5" firstAttribute="centerX" secondItem="k5W-Pp-H3A" secondAttribute="centerX" id="F4N-5v-Nxx"/>
+                                    <constraint firstItem="4o5-ny-gSF" firstAttribute="centerX" secondItem="k5W-Pp-H3A" secondAttribute="centerX" id="UC9-hY-aMh"/>
+                                    <constraint firstItem="RyI-6g-bc5" firstAttribute="width" secondItem="k5W-Pp-H3A" secondAttribute="width" id="Ywm-tA-xOv"/>
+                                    <constraint firstItem="4o5-ny-gSF" firstAttribute="centerY" secondItem="k5W-Pp-H3A" secondAttribute="centerY" id="cgB-Ti-Gd4"/>
+                                    <constraint firstItem="4o5-ny-gSF" firstAttribute="height" secondItem="k5W-Pp-H3A" secondAttribute="height" id="oPB-FM-PLF"/>
+                                    <constraint firstItem="4o5-ny-gSF" firstAttribute="width" secondItem="k5W-Pp-H3A" secondAttribute="width" id="qZB-q1-00Y"/>
+                                    <constraint firstItem="RyI-6g-bc5" firstAttribute="centerY" secondItem="k5W-Pp-H3A" secondAttribute="centerY" id="wjs-eo-nKV"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="flipAnimationDelegate" destination="BYZ-38-t0r" id="AKB-Hu-7yC"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.083165772259235382" green="0.1571536660194397" blue="0.36327379941940308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k5W-Pp-H3A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Osd-Eh-OxB"/>
+                            <constraint firstItem="k5W-Pp-H3A" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="dlO-7O-cXq"/>
+                            <constraint firstItem="k5W-Pp-H3A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="skx-Z4-LEc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="k5W-Pp-H3A" id="oX9-5C-ArC"/>
+                        <outlet property="backView" destination="RyI-6g-bc5" id="thU-Xh-dey"/>
+                        <outlet property="frontView" destination="4o5-ny-gSF" id="DUT-4g-1B3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
