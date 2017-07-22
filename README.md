@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/cocoapods/l/WDFlashCard.svg?style=flat)](http://cocoapods.org/pods/WDFlashCard)
 [![Platform](https://img.shields.io/cocoapods/p/WDFlashCard.svg?style=flat)](http://cocoapods.org/pods/WDFlashCard)
 
- ![GitHub Logo](/Recources/FlashCard.gif)
+ ![GitHub Logo](/Resources/FlashCard.gif)
 
 #Installation:
 ##Manual:
