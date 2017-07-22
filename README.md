@@ -13,7 +13,7 @@ TODO:
 ```Ruby
 target '<TargetName>' do
     use_frameworks!
-    pod 'WDFlashCard', ' ~> 0.0.2'
+    pod 'WDFlashCard', ' ~> 0.0.3'
 end
 ```
 
