@@ -2,11 +2,11 @@ Pod::Spec.new do |s|
 
 s.platform = :ios
 s.name             = "WDFlashCard"
-s.version          = "0.0.1"
+s.version          = "0.0.2"
 s.summary          = "WDFlashCard is a simple lightweight component for displaying flashcards inside iOS apps."
 
 s.description      = <<-DESC
-WDFlashCard is a simple lightweight component for displaying flashcards inside iOS apps.
+WDFlashCard is a simple lightweight component for displaying flashcards inside iOS apps. Just add front and back view, set flashcard animation type and duration.
 DESC
 
 s.homepage         = "https://github.com/VladimirDinic/WDFlashCard"
