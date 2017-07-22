@@ -5,11 +5,11 @@
 
  ![GitHub Logo](/Resources/FlashCard.gif)
 
-#Installation:
-##Manual:
+# Installation:
+## Manual:
 TODO:
 
-##CocoaPods:
+## CocoaPods:
 ```Ruby
 target '<TargetName>' do
     use_frameworks!
@@ -17,6 +17,6 @@ target '<TargetName>' do
 end
 ```
 
-#Note:
+# Note:
 Documentation is still in preparation and the code will be updated regularly
 <br>If you find any bug, please report it, and I will try to fix it ASAP.
