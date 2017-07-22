@@ -9,7 +9,7 @@ WDFlashCard is a simple lightweight component for displaying flashcards inside i
 
 # Installation:
 ## Manual:
-TODO:
+Just download source code and include WDFlashCard/WDFlashCard/WDFlashCardView.swift in your project.
 
 ## CocoaPods:
 ```Ruby
