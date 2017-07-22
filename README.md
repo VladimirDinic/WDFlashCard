@@ -19,6 +19,44 @@ target '<TargetName>' do
 end
 ```
 
+## Usage
+
+Add UIView to storyboard or Xib file and set WDFlashCard as its class. Also, add two views inside this WDFlashCard view to use them as a back and front view for flash card view. Then set WDFlashCardDelegate (using interface builder or in code) and implement its metods: flipBackView to set back view and flipFrontView to set front view.
+
+```Swift
+class ViewController: UIViewController, WDFlashCardDelegate {
+    
+    @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var frontView: UIView!
+    @IBOutlet weak var flashCard: WDFlashCard!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        flashCard.duration = 2.0
+        flashCard.flipAnimation = .flipFromLeft
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: WDFlashCardDelegate methods
+    
+    func flipBackView() -> UIView {
+        return backView
+    }
+    
+    func flipFrontView() -> UIView {
+        return frontView
+    }
+    
+    
+}
+```
+
+For better understanding look at the source code example.
+
 # Note:
 Documentation is still in preparation and the code will be updated regularly
 <br>If you find any bug, please report it, and I will try to fix it ASAP.
