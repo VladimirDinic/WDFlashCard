@@ -38,14 +38,12 @@ class ViewController: UIViewController, WDFlashCardDelegate {
     }
     //MARK: WDFlashCardDelegate methods
     
-    func flipBackView() -> UIView {
+    func flipBackView(forFlashCardView: WDFlashCard) -> UIView {
         return backView
     }
     
-    func flipFrontView() -> UIView {
+    func flipFrontView(forFlashCardView: WDFlashCard) -> UIView {
         return frontView
     }
-    
-    
 }
 
