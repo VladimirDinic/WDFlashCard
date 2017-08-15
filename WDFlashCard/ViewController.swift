@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, WDFlashCardDelegate {
     
+    @IBOutlet weak var toggleTapToFlipButton: UIButton!
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var frontView: UIView!
     @IBOutlet weak var flashCard: WDFlashCard!
@@ -25,6 +26,16 @@ class ViewController: UIViewController, WDFlashCardDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func flipPressed(_ sender: Any)
+    {
+        flashCard.flip()
+    }
+    
+    @IBAction func disableTapToFlipPressed(_ sender: Any)
+    {
+        flashCard.disableTouchToFlipFesture = !flashCard.disableTouchToFlipFesture
+        toggleTapToFlipButton.setTitle("\(flashCard.disableTouchToFlipFesture ? "Enable" : "Disable") tap to flip", for: .normal)
+    }
     //MARK: WDFlashCardDelegate methods
     
     func flipBackView() -> UIView {

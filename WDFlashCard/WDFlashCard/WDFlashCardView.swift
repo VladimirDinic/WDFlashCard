@@ -39,14 +39,17 @@ public enum FlipAnimations
 
 open class WDFlashCard: UIView {
     
-    open var flipAnimation:FlipAnimations = .flipFromLeft {
-        didSet {
-            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(flip))
-            self.addGestureRecognizer(tapGesture)
-        }
-    }
+    var animationInProgress:Bool = false
+    var tapToFlipGesture:UITapGestureRecognizer?
+    open var flipAnimation:FlipAnimations = .flipFromLeft
     open var duration:Double = 1.0
     open var showFront:Bool = true
+    open var disableTouchToFlipFesture:Bool = false
+    {
+        didSet {
+            self.setupTapToFlipGesture()
+        }
+    }
     #if TARGET_INTERFACE_BUILDER
         @IBOutlet open weak var flashCardDelegate: AnyObject?
     #else
@@ -57,6 +60,35 @@ open class WDFlashCard: UIView {
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.setupTapToFlipGesture()
+    }
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setupTapToFlipGesture()
+    }
+    
+    func setupTapToFlipGesture()
+    {
+        if !disableTouchToFlipFesture
+        {
+            if let tapGesture = tapToFlipGesture
+            {
+                tapGesture.isEnabled = true
+            }
+            else
+            {
+                tapToFlipGesture = UITapGestureRecognizer(target: self, action: #selector(flip))
+                self.addGestureRecognizer(tapToFlipGesture!)
+            }
+        }
+        else
+        {
+            if let tapGesture = tapToFlipGesture
+            {
+                tapGesture.isEnabled = false
+            }
+        }
     }
     
     func setFrontAndBackView()
@@ -70,20 +102,25 @@ open class WDFlashCard: UIView {
     }
     
     open func flip() {
-        self.setFrontAndBackView()
-        if frontView != nil && backView != nil
+        if !animationInProgress
         {
-            let fromView = showFront ? frontView : backView
-            let toView = showFront ? backView : frontView
-            backView?.isHidden = showFront
-            UIView.transition(from: fromView!,
-                              to: toView!,
-                              duration:duration,
-                              options: [flipAnimation.animationOption(), .showHideTransitionViews]) { (finish) in
-                                if finish {
-                                    self.showFront = !self.showFront
-                                    self.backView?.isHidden = self.showFront
-                                }
+            self.setFrontAndBackView()
+            if frontView != nil && backView != nil
+            {
+                let fromView = showFront ? frontView : backView
+                let toView = showFront ? backView : frontView
+                backView?.isHidden = showFront
+                animationInProgress = true
+                UIView.transition(from: fromView!,
+                                  to: toView!,
+                                  duration:duration,
+                                  options: [flipAnimation.animationOption(), .showHideTransitionViews]) { (finish) in
+                                    self.animationInProgress = false
+                                    if finish {
+                                        self.showFront = !self.showFront
+                                        self.backView?.isHidden = self.showFront
+                                    }
+                }
             }
         }
     }    

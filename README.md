@@ -15,7 +15,7 @@ Just download source code and include WDFlashCard/WDFlashCard/WDFlashCardView.sw
 ```Ruby
 target '<TargetName>' do
     use_frameworks!
-    pod 'WDFlashCard', ' ~> 0.0.5'
+    pod 'WDFlashCard', ' ~> 0.0.7'
 end
 ```
 
@@ -50,9 +50,19 @@ class ViewController: UIViewController, WDFlashCardDelegate {
     func flipFrontView() -> UIView {
         return frontView
     }
-    
-    
 }
+```
+
+If you want to disable tap to flip option, you can set flashCard.disableTouchToFlipFesture to true (By default, it is set to true). 
+
+```Swift
+flashCard.disableTouchToFlipFesture = true
+```
+
+In that case, you are still able to flip this view. All you need to do is to call flip() method from wherever you need: 
+
+```Swift
+flashCard.flip()
 ```
 
 For better understanding look at the source code example.

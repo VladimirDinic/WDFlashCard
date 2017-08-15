@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9J-Gm-9vL">
-                                                <rect key="frame" x="92" y="135" width="116" height="30"/>
+                                                <rect key="frame" x="108.5" y="135" width="83.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" red="0.070588235289999995" green="0.13725490200000001" blue="0.23921568630000001" alpha="1" colorSpace="deviceRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                                         <rect key="frame" x="-0.5" y="-0.5" width="300" height="300"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wh-86-FjH">
-                                                <rect key="frame" x="91" y="135" width="118" height="30"/>
+                                                <rect key="frame" x="100" y="135" width="100.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" red="0.070588235289999995" green="0.13725490200000001" blue="0.23921568630000001" alpha="1" colorSpace="deviceRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -91,11 +91,36 @@
                                     <outlet property="flashCardDelegate" destination="BYZ-38-t0r" id="R9z-iv-FI7"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdT-5f-34s">
+                                <rect key="frame" x="10" y="617" width="167.5" height="30"/>
+                                <state key="normal" title="Flip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pDc-0K-r9w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gA-Cg-5A0">
+                                <rect key="frame" x="197.5" y="617" width="167.5" height="30"/>
+                                <state key="normal" title="Disable tap to flip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="disableTapToFlipPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hgj-MJ-OtZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.083165772259235382" green="0.1571536660194397" blue="0.36327379941940308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="HdT-5f-34s" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" constant="-20" id="6hg-mA-ARy"/>
                             <constraint firstItem="k5W-Pp-H3A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Osd-Eh-OxB"/>
+                            <constraint firstItem="2gA-Cg-5A0" firstAttribute="width" secondItem="HdT-5f-34s" secondAttribute="width" id="PBQ-nx-L4H"/>
+                            <constraint firstItem="2gA-Cg-5A0" firstAttribute="height" secondItem="HdT-5f-34s" secondAttribute="height" id="bwO-XT-ZLm"/>
+                            <constraint firstItem="HdT-5f-34s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="d2L-E7-U7h"/>
                             <constraint firstItem="k5W-Pp-H3A" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="dlO-7O-cXq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HdT-5f-34s" secondAttribute="bottom" constant="20" id="h55-ie-ZKe"/>
+                            <constraint firstItem="2gA-Cg-5A0" firstAttribute="centerY" secondItem="HdT-5f-34s" secondAttribute="centerY" id="jMK-z4-q4R"/>
+                            <constraint firstItem="2gA-Cg-5A0" firstAttribute="leading" secondItem="HdT-5f-34s" secondAttribute="trailing" constant="20" id="pJ9-ls-gnF"/>
                             <constraint firstItem="k5W-Pp-H3A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="skx-Z4-LEc"/>
                         </constraints>
                     </view>
@@ -103,6 +128,7 @@
                         <outlet property="backView" destination="RyI-6g-bc5" id="thU-Xh-dey"/>
                         <outlet property="flashCard" destination="k5W-Pp-H3A" id="fp7-jc-3z4"/>
                         <outlet property="frontView" destination="4o5-ny-gSF" id="DUT-4g-1B3"/>
+                        <outlet property="toggleTapToFlipButton" destination="2gA-Cg-5A0" id="bst-JB-liL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
