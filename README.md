@@ -15,7 +15,7 @@ Just download source code and include WDFlashCard/WDFlashCard/WDFlashCardView.sw
 ```Ruby
 target '<TargetName>' do
     use_frameworks!
-    pod 'WDFlashCard', ' ~> 0.1.0'
+    pod 'WDFlashCard'
 end
 ```
 

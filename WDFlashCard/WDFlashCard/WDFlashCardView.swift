@@ -33,8 +33,8 @@ public enum FlipAnimations
 
 @objc public protocol WDFlashCardDelegate
 {
-    func flipFrontView(forFlashCardView:WDFlashCard) -> UIView
-    func flipBackView(forFlashCardView:WDFlashCard) -> UIView
+    func flipFrontView(forFlashCard flashCardView:WDFlashCard) -> UIView
+    func flipBackView(forFlashCard flashCardView:WDFlashCard) -> UIView
 }
 
 open class WDFlashCard: UIView {
@@ -95,8 +95,8 @@ open class WDFlashCard: UIView {
     {
         if let delegate = self.flashCardDelegate
         {
-            frontView = delegate.flipFrontView(forFlashCardView: self)
-            backView = delegate.flipBackView(forFlashCardView: self)
+            frontView = delegate.flipFrontView(forFlashCard: self)
+            backView = delegate.flipBackView(forFlashCard: self)
             backView?.isHidden = true
         }
     }
