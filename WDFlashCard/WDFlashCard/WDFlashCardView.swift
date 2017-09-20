@@ -101,7 +101,11 @@ open class WDFlashCard: UIView {
         }
     }
     
-    open func flip() {
+     @objc open func resetToInitialState() {
+        self.flip(rightNow: true)
+    }
+    
+    @objc open func flip(rightNow:Bool = false) {
         if !animationInProgress
         {
             self.setFrontAndBackView()
@@ -113,7 +117,7 @@ open class WDFlashCard: UIView {
                 animationInProgress = true
                 UIView.transition(from: fromView!,
                                   to: toView!,
-                                  duration:duration,
+                                  duration:rightNow ? 0.0 : duration,
                                   options: [flipAnimation.animationOption(), .showHideTransitionViews]) { (finish) in
                                     self.animationInProgress = false
                                     if finish {
@@ -125,3 +129,4 @@ open class WDFlashCard: UIView {
         }
     }    
 }
+
