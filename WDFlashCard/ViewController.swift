@@ -46,6 +46,14 @@ class ViewController: UIViewController, WDFlashCardDelegate {
     func flipFrontView(forFlashCard flashCardView: WDFlashCard) -> UIView {
         return frontView
     }
+    
+    func flashCardWillFlip(forFlashCard flashCardView: WDFlashCard) {
+        print("Flash card will flip")
+    }
+    
+    func flashCardFlipped(forFlashCard flashCardView: WDFlashCard) {
+        print("Flash card flipped")
+    }
 }
 
 

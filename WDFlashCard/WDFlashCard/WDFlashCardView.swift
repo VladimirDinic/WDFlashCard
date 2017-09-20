@@ -35,6 +35,8 @@ public enum FlipAnimations
 {
     func flipFrontView(forFlashCard flashCardView:WDFlashCard) -> UIView
     func flipBackView(forFlashCard flashCardView:WDFlashCard) -> UIView
+    @objc optional func flashCardWillFlip(forFlashCard flashCardView:WDFlashCard)
+    @objc optional func flashCardFlipped(forFlashCard flashCardView:WDFlashCard)
 }
 
 open class WDFlashCard: UIView {
@@ -120,24 +122,38 @@ open class WDFlashCard: UIView {
         
     }
     
-    @objc open func flip(rightNow:Bool = false) {
+    @objc open func flip() {
         if !animationInProgress
         {
             self.setFrontAndBackView()
             if frontView != nil && backView != nil
             {
+                if let delegate = self.flashCardDelegate
+                {
+                    if delegate.flashCardWillFlip != nil
+                    {
+                        delegate.flashCardWillFlip!(forFlashCard: self)
+                    }
+                }
                 let fromView = showFront ? frontView : backView
                 let toView = showFront ? backView : frontView
                 backView?.isHidden = showFront
                 animationInProgress = true
                 UIView.transition(from: fromView!,
                                   to: toView!,
-                                  duration:rightNow ? 0.0 : duration,
+                                  duration: duration,
                                   options: [flipAnimation.animationOption(), .showHideTransitionViews]) { (finish) in
                                     self.animationInProgress = false
                                     if finish {
                                         self.showFront = !self.showFront
                                         self.backView?.isHidden = self.showFront
+                                    }
+                                    if let delegate = self.flashCardDelegate
+                                    {
+                                        if delegate.flashCardFlipped != nil
+                                        {
+                                            delegate.flashCardFlipped!(forFlashCard: self)
+                                        }
                                     }
                 }
             }
