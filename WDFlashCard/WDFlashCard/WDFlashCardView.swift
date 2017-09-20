@@ -101,8 +101,18 @@ open class WDFlashCard: UIView {
         }
     }
     
-     @objc open func resetToInitialState() {
-        self.flip(rightNow: true)
+     @objc open func showFrontView() {
+        if !showFront
+        {
+            self.flip(rightNow: true)
+        }
+    }
+    
+    @objc open func showBackView() {
+        if showFront
+        {
+            self.flip(rightNow: true)
+        }
     }
     
     @objc open func flip(rightNow:Bool = false) {
