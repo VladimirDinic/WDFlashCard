@@ -19,14 +19,14 @@ public enum FlipAnimations
     {
         switch self
         {
-            case .flipFromLeft:
-                return .transitionFlipFromLeft
-            case .flipFromRight:
-                return .transitionFlipFromRight
-            case .flipFromTop:
-                return .transitionFlipFromTop
-            case .flipFromBottom:
-                return .transitionFlipFromBottom
+        case .flipFromLeft:
+            return .transitionFlipFromLeft
+        case .flipFromRight:
+            return .transitionFlipFromRight
+        case .flipFromTop:
+            return .transitionFlipFromTop
+        case .flipFromBottom:
+            return .transitionFlipFromBottom
         }
     }
 }
@@ -45,13 +45,13 @@ open class WDFlashCard: UIView {
     open var duration:Double = 1.0
     open var showFront:Bool = true
     open var disableTouchToFlipFesture:Bool = false
-    {
+        {
         didSet {
             self.setupTapToFlipGesture()
         }
     }
     #if TARGET_INTERFACE_BUILDER
-        @IBOutlet open weak var flashCardDelegate: AnyObject?
+    @IBOutlet open weak var flashCardDelegate: AnyObject?
     #else
     open var flashCardDelegate: WDFlashCardDelegate? = nil
     #endif
@@ -101,18 +101,21 @@ open class WDFlashCard: UIView {
         }
     }
     
-     @objc open func showFrontView() {
-        if !showFront
+    @objc open func showFrontView() {
+        if let frontView = self.frontView
         {
-            self.flip(rightNow: true)
+            self.bringSubview(toFront: frontView)
+            frontView.isHidden = false
         }
     }
     
     @objc open func showBackView() {
-        if showFront
+        if let backView = self.backView
         {
-            self.flip(rightNow: true)
+            self.bringSubview(toFront: backView)
+            backView.isHidden = false
         }
+        
     }
     
     @objc open func flip(rightNow:Bool = false) {
@@ -137,6 +140,6 @@ open class WDFlashCard: UIView {
                 }
             }
         }
-    }    
+    }
 }
 
