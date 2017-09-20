@@ -106,6 +106,7 @@ open class WDFlashCard: UIView {
         {
             self.bringSubview(toFront: frontView)
             frontView.isHidden = false
+            showFront = true
         }
     }
     
@@ -114,6 +115,7 @@ open class WDFlashCard: UIView {
         {
             self.bringSubview(toFront: backView)
             backView.isHidden = false
+            showFront = false
         }
         
     }
