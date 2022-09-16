@@ -15,7 +15,7 @@ public enum FlipAnimations
     case flipFromTop
     case flipFromBottom
     
-    func animationOption() -> UIViewAnimationOptions
+    func animationOption() -> UIView.AnimationOptions
     {
         switch self
         {
@@ -106,7 +106,7 @@ open class WDFlashCard: UIView {
     @objc open func showFrontView() {
         if let frontView = self.frontView
         {
-            self.bringSubview(toFront: frontView)
+            self.bringSubviewToFront(frontView)
             frontView.isHidden = false
             showFront = true
         }
@@ -115,7 +115,7 @@ open class WDFlashCard: UIView {
     @objc open func showBackView() {
         if let backView = self.backView
         {
-            self.bringSubview(toFront: backView)
+            self.bringSubviewToFront(backView)
             backView.isHidden = false
             showFront = false
         }
