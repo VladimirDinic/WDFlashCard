@@ -20,6 +20,7 @@ class ViewController: UIViewController, WDFlashCardDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         flashCard.duration = 2.0
         flashCard.flipAnimation = .flipFromLeft
+        flashCard.flashCardDelegate = self
     }
     
     override func didReceiveMemoryWarning() {
